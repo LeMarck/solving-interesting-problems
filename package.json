@@ -1,0 +1,16 @@
+{
+    "name": "interview",
+    "description": "Решение задач с собеседований",
+    "version": "1.0.18",
+    "author": "Петров Евгений",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "eslint": "^5.8.0",
+        "jest": "^23.6.0"
+    },
+    "scripts": {
+        "test": "jest tests --coverage",
+        "lint": "eslint src"
+    }
+}

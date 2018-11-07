@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - "10"
+
+cache:
+  directories:
+    - "node_modules"
+
+install:
+  - npm install
+  - npm install coveralls --save-dev
+
+script:
+  - npm run lint
+  - npm test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
