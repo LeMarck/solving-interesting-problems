@@ -1,7 +1,7 @@
 {
     "name": "interview",
     "description": "Решение задач с собеседований",
-    "version": "1.0.18",
+    "version": "1.0.20",
     "author": "Петров Евгений",
     "license": "MIT",
     "private": true,
