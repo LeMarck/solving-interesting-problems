@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * @param {Function} func
  * @param {Any} context
- * @param  {...Any} defaultArgs
+ * @param  {...Any} initArgs
  * @returns {Function}
  */
-function bind(func, context, ...defaultArgs) {
-    return (...args) => func.apply(context, defaultArgs.concat(args));
-}
+// eslint-disable-next-line
+Function.prototype.myBind = function myBind(context, ...initArgs) {
+    const func = this;
 
-module.exports = bind;
+    return (...args) => func.apply(context, initArgs.concat(args));
+};

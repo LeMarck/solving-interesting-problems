@@ -1,6 +1,6 @@
 'use strict';
 
-const bind = require('../src/bind');
+require('../src/bind');
 
 describe('bind', () => {
     it('должен вызвать функцию в контексте другого объекта', () => {
@@ -12,12 +12,12 @@ describe('bind', () => {
             }
         };
 
-        expect(bind(bob.getName, alice)()).toEqual('Alice');
+        expect(bob.getName.myBind(alice)()).toEqual('Alice');
     });
 
     it('должен вызвать функцию со значениями по умолчанию', () => {
         const sum = (a, b, c) => a + b + c;
 
-        expect(bind(sum, null, 1, 2)(3)).toEqual(6);
+        expect(sum.myBind(null, 1, 2)(3)).toEqual(6);
     });
 });

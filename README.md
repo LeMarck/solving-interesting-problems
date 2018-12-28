@@ -1,5 +1,5 @@
 # Задачи
-[![Build Status](https://travis-ci.org/LeMarck/interview.svg?branch=master)](https://travis-ci.org/LeMarck/interview)
-[![Coverage Status](https://coveralls.io/repos/github/LeMarck/interview/badge.svg?branch=master)](https://coveralls.io/github/LeMarck/interview?branch=master)
+[![Build Status](https://travis-ci.org/LeMarck/tasks.svg?branch=master)](https://travis-ci.org/LeMarck/tasks)
+[![Coverage Status](https://coveralls.io/repos/github/LeMarck/tasks/badge.svg?branch=master)](https://coveralls.io/github/LeMarck/tasks?branch=master)
 
-Решение задач с собеседований
+Решение интересных задач
