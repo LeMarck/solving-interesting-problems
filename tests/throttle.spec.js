@@ -8,14 +8,18 @@ describe('throttle', () => {
     it('должен быть вызван через 20 мс после последнего вызова функции', async () => {
         const func = jest.fn();
         const throttledFunc = throttle(func, 20);
-        let callCount = 0;
 
-        for (let i = 0; i < 10; i++) {
-            await sleep(i);
-            throttledFunc();
-            if (i === 0 || i === 6 || i === 9) {
-                expect(func).toHaveBeenCalledTimes(++callCount);
-            }
-        }
+        throttledFunc();
+        expect(func).toBeCalled();
+        expect(func).toHaveBeenCalledTimes(1);
+
+        throttledFunc();
+        expect(func).toHaveBeenCalledTimes(1);
+
+        await sleep(20);
+        expect(func).toHaveBeenCalledTimes(2);
+
+        await sleep(20);
+        expect(func).toHaveBeenCalledTimes(2);
     });
 });
