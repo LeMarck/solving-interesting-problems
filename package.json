@@ -1,13 +1,13 @@
 {
     "name": "interview",
     "description": "Решение интересных задач",
-    "version": "1.20.2",
+    "version": "1.21.0",
     "author": "Петров Евгений",
     "license": "MIT",
     "private": true,
     "devDependencies": {
         "eslint": "^5.16.0",
-        "jest": "^24.7.0"
+        "jest": "^24.7.1"
     },
     "scripts": {
         "test": "jest tests --coverage",
