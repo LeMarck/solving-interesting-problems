@@ -2,9 +2,9 @@
 'use strict';
 
 /**
- * Проверяет являются ли слова анаграммами
- * @param {string} str массив
- * @returns {string} Являются ли эти слова анаграммами
+ * Поднимает все первые буквы в тексте в верхний регистр
+ * @param {string} str Текст
+ * @returns {string} Модифицированный текст
  */
 function toJadenCase(str) {
     return str

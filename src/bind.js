@@ -1,9 +1,10 @@
 'use strict';
 
 /**
- * @param {Any} context
- * @param  {...Any} initArgs
- * @returns {Function}
+ * Реализация собственного bind
+ * @param {Any} context Контекст
+ * @param  {...Any} initArgs Начальные
+ * @returns {Function} Новая функция
  */
 // eslint-disable-next-line
 Function.prototype.myBind = function myBind(context, ...initArgs) {

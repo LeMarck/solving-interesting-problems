@@ -16,7 +16,6 @@ function fibonacciRecursive(position) {
 
 /**
  * Находит n-ое число Фибоначчи
- * *NOTE:* Рекурсивный алгоритм
  * @param {Number} position Позиция в последовательности
  * @returns {Number} Число на позиции
  */

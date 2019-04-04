@@ -2,8 +2,8 @@
 
 /**
  * Разворачивает объект
- * @param {Object} obj Многомерный массив
- * @returns {Object} Одномерный массив
+ * @param {Object} obj Дерево глубины N
+ * @returns {Object} Дерево глубины 1
  */
 function plainObject(obj) {
     const result = {};

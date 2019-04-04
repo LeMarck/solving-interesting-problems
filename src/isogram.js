@@ -2,9 +2,11 @@
 'use strict';
 
 /**
- * Проверяет являются ли слова анаграммами
- * @param {String} word слово
- * @returns {Boolean} Являются ли эти слова анаграммами
+ * Проверяет является ли слово изограммой
+ * *NOTE:* Изограмма - это логологический термин
+ * для слова или фразы без повторяющейся буквы
+ * @param {String} word Слово
+ * @returns {Boolean} Являются ли это слово изограммой
  */
 function isIsogram(word) {
     const str = word.toLowerCase();

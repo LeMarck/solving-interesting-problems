@@ -3,8 +3,8 @@
 
 /**
  * Отфильтровать массив от строк
- * @param {Array} arr массив
- * @returns {Array} Являются ли эти слова анаграммами
+ * @param {Array} arr Массив
+ * @returns {Array} Массив чисел
  */
 function filterList(arr) {
     return arr.filter(item => typeof item === 'number');

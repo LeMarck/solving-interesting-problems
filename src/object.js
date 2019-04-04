@@ -2,10 +2,10 @@
 
 /**
  * Возвращает значение объекта по заданному пути
- * @param {Object} obj
- * @param {String} path
- * @param {Any} def
- * @returns {Any}
+ * @param {Object} obj Объект
+ * @param {String} path Путь
+ * @param {Any} def Значение по умолчанию
+ * @returns {Any} Результат
  */
 function get(obj, path, def) {
     const keys = path.split('.');
@@ -24,9 +24,9 @@ function get(obj, path, def) {
 
 /**
  * Устанавливает значение для поля объекта по заданному пути
- * @param {Object} obj
- * @param {String} path
- * @param {Any} value
+ * @param {Object} obj Объект
+ * @param {String} path Путь
+ * @param {Any} value Значение
  */
 function set(obj, path, value) {
     let data = obj;
