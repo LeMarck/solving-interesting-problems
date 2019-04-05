@@ -1,7 +1,7 @@
 {
     "name": "interview",
     "description": "Решение интересных задач",
-    "version": "1.21.0",
+    "version": "1.21.1",
     "author": "Петров Евгений",
     "license": "MIT",
     "private": true,

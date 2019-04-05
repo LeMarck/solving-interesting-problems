@@ -6,9 +6,9 @@
  * @param {Array} arr Многомерный массив
  * @returns {Array} Одномерный массив
  */
-function plainArrayRecursive(arr) {
+function flattenRecursive(arr) {
     return arr.reduce((result, item) => {
-        return result.concat(Array.isArray(item) ? plainArray(item) : item);
+        return result.concat(Array.isArray(item) ? flattenRecursive(item) : item);
     }, []);
 }
 
@@ -17,7 +17,7 @@ function plainArrayRecursive(arr) {
  * @param {Array} array Многомерный массив
  * @returns {Array} Одномерный массив
  */
-function plainArray(array) {
+function flatten(array) {
     let arr = array.slice();
     let index = 0;
 
@@ -32,6 +32,6 @@ function plainArray(array) {
 }
 
 module.exports = {
-    plainArrayRecursive,
-    plainArray
+    flattenRecursive,
+    flatten
 };
