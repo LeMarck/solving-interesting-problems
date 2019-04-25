@@ -1,7 +1,7 @@
 {
-    "name": "interview",
+    "name": "tasks",
     "description": "Решение интересных задач",
-    "version": "1.21.1",
+    "version": "1.23.0",
     "author": "Петров Евгений",
     "license": "MIT",
     "private": true,
@@ -10,7 +10,7 @@
         "jest": "^24.7.1"
     },
     "scripts": {
-        "test": "jest tests --coverage",
+        "test": "jest src --coverage",
         "lint": "eslint src"
     }
 }
