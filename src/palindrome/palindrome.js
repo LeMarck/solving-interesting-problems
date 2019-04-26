@@ -18,42 +18,19 @@ function isPalindrome(word) {
 
 /**
  * Можно ли из слова сделать палиндром
- * @param {String} word Слово
+ * @param {String} inputString Слово
  * @returns {Boolean} Являются ли слово палиндромом
  */
-function canCreatePalindrome(word) {
-    word = word.toLowerCase().replace(/ /gi, '');
+function palindromeRearranging(inputString) {
+    const word = inputString.toLowerCase().replace(/ /gi, '');
+    const alf = word.split('').reduce((a, char) => ({ ...a, [char]: (a[char] || 0) + 1 }), {});
+    const isOddLength = word.length % 2;
+    const oddWords = Object.values(alf).filter(i => i % 2).length;
 
-    const alf = {};
-    let even = 0;
-    let odd = 0;
-
-    for (let index = 0; index < word.length; index++) {
-        const char = word[index];
-        if (alf[char]) {
-            alf[char]++;
-        } else {
-            alf[char] = 1;
-            even++;
-        }
-    }
-
-    if (word.length % 2) {
-        even--;
-        odd++;
-    }
-
-    // eslint-disable-next-line
-    for (let item in alf) {
-        if (alf[item] % 2 ? --odd : --even < 0) {
-            return false;
-        }
-    }
-
-    return true;
+    return isOddLength ? oddWords === 1 : !oddWords;
 }
 
 module.exports = {
     isPalindrome,
-    canCreatePalindrome
+    palindromeRearranging
 };

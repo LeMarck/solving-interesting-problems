@@ -1,7 +1,7 @@
 {
     "name": "tasks",
     "description": "Решение интересных задач",
-    "version": "1.23.0",
+    "version": "1.23.1",
     "author": "Петров Евгений",
     "license": "MIT",
     "private": true,
