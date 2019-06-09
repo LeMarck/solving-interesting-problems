@@ -1,5 +1,5 @@
 {
-    "name": "tasks",
+    "name": "solving-interesting-problems",
     "description": "Решение интересных задач",
     "version": "1.23.1",
     "author": "Петров Евгений",
@@ -7,7 +7,7 @@
     "private": true,
     "devDependencies": {
         "eslint": "^5.16.0",
-        "jest": "^24.7.1"
+        "jest": "^24.8.0"
     },
     "scripts": {
         "test": "jest src --coverage",

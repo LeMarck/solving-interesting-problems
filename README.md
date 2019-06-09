@@ -1,6 +1,6 @@
 # Задачи
-[![Build Status](https://travis-ci.org/LeMarck/tasks.svg?branch=master)](https://travis-ci.org/LeMarck/tasks)
-[![Coverage Status](https://coveralls.io/repos/github/LeMarck/tasks/badge.svg?branch=master)](https://coveralls.io/github/LeMarck/tasks?branch=master)
+[![Build Status](https://travis-ci.org/LeMarck/solving-interesting-problems.svg?branch=master)](https://travis-ci.org/LeMarck/solving-interesting-problems)
+[![Coverage Status](https://coveralls.io/repos/github/LeMarck/solving-interesting-problems/badge.svg?branch=master)](https://coveralls.io/github/LeMarck/solving-interesting-problems?branch=master)
 
 Решение интересных задач с собеседований, разных ресурсов с задачами
 
