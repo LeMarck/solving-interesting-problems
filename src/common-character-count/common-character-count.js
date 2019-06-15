@@ -1,6 +1,7 @@
 'use strict';
 
 /**
+ * *SOURCE*: https://codesignal.com
  * Given two strings, find the number of common characters between them.
  * @param {String} first Первое слово
  * @param {String} second Второе слово

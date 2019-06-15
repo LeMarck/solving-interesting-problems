@@ -2,6 +2,7 @@
 'use strict';
 
 /**
+ * *SOURCE*: https://codesignal.com
  * Given a sequence of integers as an array,
  * determine whether it is possible to obtain
  * a strictly increasing sequence by removing
