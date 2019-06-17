@@ -10,6 +10,7 @@
 2. [**Jest**](https://jestjs.io)
 
 ## TODO
+- [ ] Список задач
 - [ ] README для каждой задачи
 
 ## License

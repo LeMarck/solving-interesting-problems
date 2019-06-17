@@ -1,7 +1,7 @@
 {
     "name": "solving-interesting-problems",
     "description": "Решение интересных задач",
-    "version": "1.24.0",
+    "version": "1.25.0",
     "author": "Петров Евгений",
     "license": "MIT",
     "private": true,
