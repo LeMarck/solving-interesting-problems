@@ -1,12 +1,12 @@
 {
     "name": "solving-interesting-problems",
     "description": "Решение интересных задач",
-    "version": "1.25.0",
+    "version": "1.25.1",
     "author": "Петров Евгений",
     "license": "MIT",
     "private": true,
     "devDependencies": {
-        "eslint": "^5.16.0",
+        "eslint": "^6.0.1",
         "jest": "^24.8.0"
     },
     "scripts": {
