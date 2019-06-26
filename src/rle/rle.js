@@ -10,21 +10,7 @@ function rle(str) {
         throw new TypeError('Пустая строка');
     }
 
-    let char = str[0];
-    let size = 1;
-    let result = '';
-
-    for (let index = 1; index < str.length; index++) {
-        if (str[index] === char) {
-            size++;
-        } else {
-            result += (size > 1 ? size : '') + char;
-            char = str[index];
-            size = 1;
-        }
-    }
-
-    return result + (size > 1 ? size : '') + char;
+    return str.replace(/(.)\1+/g, (chars, char) => chars.length + char);
 }
 
 module.exports = rle;
