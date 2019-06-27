@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/LeMarck/solving-interesting-problems.svg?branch=master)](https://travis-ci.org/LeMarck/solving-interesting-problems)
 [![Coverage Status](https://coveralls.io/repos/github/LeMarck/solving-interesting-problems/badge.svg?branch=master)](https://coveralls.io/github/LeMarck/solving-interesting-problems?branch=master)
 
-Решение интересных задач с собеседований, разных ресурсов с задачами
+Решение интересных задач с собеседований и разных ресурсов с задачами
 
 ## Dependencies
 
