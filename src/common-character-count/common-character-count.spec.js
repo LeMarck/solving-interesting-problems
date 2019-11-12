@@ -7,7 +7,7 @@ describe('commonCharacterCount', () => {
         expect(commonCharacterCount('aabcc', 'adcaa')).toEqual(3);
     });
 
-    it('для строк `a` и `b` должен вернуть `3`', () => {
+    it('для строк `a` и `b` должен вернуть `0`', () => {
         expect(commonCharacterCount('a', 'b')).toEqual(0);
     });
 });
