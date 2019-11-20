@@ -34,7 +34,7 @@ function hexToDecColor(hexColor) {
     const reg = /#([0-9A-z]{1,2})([0-9A-z]{1,2})([0-9A-z]{1,2})/gi;
 
     return hexColor.replace(reg, (color, r, g, b) =>
-        `(${hexToDec(r)}, ${hexToDec(g)}, ${hexToDec(b)})`
+        `rgb(${hexToDec(r)}, ${hexToDec(g)}, ${hexToDec(b)})`
     );
 }
 

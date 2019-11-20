@@ -4,8 +4,8 @@ const hexToDecColor = require('./hex-to-dec-color');
 
 describe('hexToDecColor', () => {
     it('должен вернуть RGB запись цвета', () => {
-        expect(hexToDecColor('#ffffff')).toEqual('(255, 255, 255)');
-        expect(hexToDecColor('#abc')).toEqual('(170, 187, 204)');
+        expect(hexToDecColor('#ffffff')).toEqual('rgb(255, 255, 255)');
+        expect(hexToDecColor('#abc')).toEqual('rgb(170, 187, 204)');
     });
 
     it('должен вернуть ошибку TypeError', () => {
