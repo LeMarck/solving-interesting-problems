@@ -18,17 +18,20 @@ function flattenRecursive(arr) {
  * @returns {Array} Одномерный массив
  */
 function flatten(array) {
-    let arr = array.slice();
-    let index = 0;
+    let stack = [...array];
+    const result = [];
 
-    while (index < arr.length) {
-        while (Array.isArray(arr[index])) {
-            arr = arr.slice(0, index).concat(arr[index], arr.slice(index + 1));
+    while (stack.length) {
+        const next = stack.pop();
+
+        if (Array.isArray(next)) {
+            stack.push(...next);
+        } else {
+            result.push(next);
         }
-        index++;
     }
 
-    return arr;
+    return result.reverse();
 }
 
 module.exports = {
